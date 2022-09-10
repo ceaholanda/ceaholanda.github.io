@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: white;
+}
+
+//////////////////////////// HEADER //////////////////////////////
+header {
+  width: 100%;
+  padding: 1em 2em 1em 2em;
+  background-color: white;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: "Poppins";
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 1.3em;
+  }
+
+  .open-menu {
+    cursor: pointer;
+    margin-top: 0.4em;
+  }
+
+  nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 190px;
+    display: none;
+    padding: 1em;
+    z-index: 2;
+    background-color: #20272e;
+    //background-color: #23252f;
+  }
+
+  nav.menu-appear {
+    display: block;
+  }
+
+  .close-menu {
+    cursor: pointer;
+    float: right;
+    margin-top: 0.8em;
+  }
+
+  ul {
+    margin-top: 7em;
+  }
+
+  li {
+    list-style-type: none;
+    text-align: right;
+    margin-top: 2em;
+    font-size: 1.2rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.animate {
+  opacity: 1;
+  transition: 800ms;
+}
+
+.content-animate {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+////////////////////////// MAIN ///////////////////////////
+.main {
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8em;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .photo {
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: black;
+      text-align: center;
+      max-width: 70%;
+    }
+    p {
+      //margin-top: 4px;
+      font-size: 1em;
+      color: rgba(0, 0, 0, 0.742);
+    }
+    a {
+      color: rgba(0, 0, 0, 0.74);
+    }
+    .google-scholar {
+      margin-top: 5px;
+    }
+  }
+
+  .biography {
+    h2 {
+      font-size: 1.7em;
+      font-weight: 500;
+      color: black;
+    }
+    .about-me {
+      margin-top: 8px;
+      font-size: 1.1em;
+      color: rgba(0, 0, 0, 0.742);
+    }
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: 500;
+      margin-top: 30px;
+      color: black;
+    }
+
+    .research-interests {
+      font-size: 1.1em;
+      margin-top: 8px;
+      color: rgba(0, 0, 0, 0.742);
+    }
+
+    .contact {
+      margin-top: 30px;
+      font-size: 1.1em;
+
+      span {
+        font-size: 1.1em;
+        //font-weight: 500;
+        color: rgba(0, 0, 0, 0.742);
+      }
+    }
+  }
+}
+
+////////////////////////// Papers ///////////////////////////
+.papers {
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7em;
+    color: black;
+    margin-bottom: 2em;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 15px;
+  }
+
+  .pb {
+    margin-bottom: 2em;
+
+    .paper-link {
+      font-size: 1.1em;
+      max-width: 50px;
+      color: #0095eb;
+    }
+
+    .mini-links {
+      display: flex;
+      gap: 5px;
+      margin-top: 5px;
+
+      a {
+        text-decoration: none;
+        color: #0095eb;
+        border: 1px solid #0095eb;
+        border-radius: 3px;
+        padding: 1px 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+////////////////// Unpublished works /////////////////
+.unpublished {
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+  h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.7em;
+    color: black;
+    margin-bottom: 2em;
+  }
+
+  .unpublished-box {
+    margin-bottom: 2em;
+
+    .title {
+      font-size: 1.1em;
+      color: black;
+      margin-bottom: 0px;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.74);
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0095eb;
+      border: 1px solid #0095eb;
+      border-radius: 3px;
+      padding: 1px 5px;
+      font-size: 14px;
+    }
+  }
+}
+
+//////////////// Media Queries ///////////////
+//Screens 768px+ wide
+@media only screen and (min-width: 768px) {
+  .open-menu,
+  .close-menu {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    height: auto;
+    width: auto;
+    position: static;
+    padding: 0;
+    background-color: white;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+    }
+
+    li {
+      margin: 9px 20px 0px 20px;
+      text-align: center;
+      font-size: 0.95em;
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+//Screens wider than 1080px
+@media only screen and (min-width: 1080px) {
+  header {
+    padding: 1em 4em 1em 4em;
+  }
+
+  .main {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8em 2em;
+
+    .info {
+      width: 35%;
+
+      h2 {
+        max-width: 50%;
+      }
+    }
+
+    .biography {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 65%;
+    }
+  }
+
+  .papers {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-around;
+
+    .left-col-mp {
+      width: 40%;
+    }
+
+    .right-col-mp {
+      width: 70%;
+    }
+  }
+
+  .unpublished {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-around;
+
+    .left-col-unpublished {
+      width: 40%;
+    }
+
+    .right-col-unpublished {
+      width: 70%;
+    }
+  }
+
+  .thesis {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-around;
+
+    .left-col-thesis {
+      width: 40%;
+    }
+
+    .right-col-thesis {
+      width: 70%;
+    }
+  }
+}

@@ -283,9 +283,11 @@ header li a {
   }
   .papers {
     display: flex;
-    flex-direction: row;
     align-items: initial;
     justify-content: space-around;
+  }
+  .papers h2 {
+    text-align: start;
   }
   .papers .left-col-mp {
     width: 40%;
@@ -295,9 +297,11 @@ header li a {
   }
   .unpublished {
     display: flex;
-    flex-direction: row;
     align-items: initial;
     justify-content: space-around;
+  }
+  .unpublished h2 {
+    text-align: start;
   }
   .unpublished .left-col-unpublished {
     width: 40%;

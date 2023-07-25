@@ -334,9 +334,12 @@ header {
 
   .papers {
     display: flex;
-    flex-direction: row;
     align-items: initial;
     justify-content: space-around;
+
+    h2 {
+      text-align: start;
+    }
 
     .left-col-mp {
       width: 40%;
@@ -349,9 +352,12 @@ header {
 
   .unpublished {
     display: flex;
-    flex-direction: row;
     align-items: initial;
     justify-content: space-around;
+    
+    h2 {
+      text-align: start;
+    }
 
     .left-col-unpublished {
       width: 40%;

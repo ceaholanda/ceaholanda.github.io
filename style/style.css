@@ -170,7 +170,7 @@ header li a {
 }
 .papers p {
   color: rgba(0, 0, 0, 0.74);
-  font-size: 15px;
+  font-size: 12px;
 }
 .papers .pb {
   margin-bottom: 2em;
@@ -191,7 +191,7 @@ header li a {
   border: 1px solid #0095eb;
   border-radius: 3px;
   padding: 1px 5px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .unpublished {
@@ -219,7 +219,7 @@ header li a {
 }
 .unpublished .unpublished-box p {
   color: rgba(0, 0, 0, 0.74);
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 5px;
 }
 .unpublished .unpublished-box a {
@@ -228,7 +228,7 @@ header li a {
   border: 1px solid #0095eb;
   border-radius: 3px;
   padding: 1px 5px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 @media only screen and (min-width: 768px) {
